@@ -10,7 +10,7 @@ int _islower(int c)
 {
 	int i = 'a';
 
-	for (i = 'a'; i <= 'z'; i++);
+	for (i = 'a'; i <= 'z'; i++)
 	{
 		/* Check if c is lowercase */
 		if (c == i)
