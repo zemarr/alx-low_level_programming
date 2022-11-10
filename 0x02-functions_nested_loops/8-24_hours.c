@@ -2,8 +2,7 @@
 
 /**
  * jack_bauer - prints every minute of the day
- * @h: Hours
- * @m: Minutes
+ *
  * Return: void
  */
 
