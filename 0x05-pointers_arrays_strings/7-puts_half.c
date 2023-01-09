@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,25 +8,19 @@
 
 void puts_half(char *str)
 {
-int i, len = _strlen(str);
+	int index = 0, len = 0, n;
 
-for (i = ((len - 1) / 2) + 1; i < len; i++)
-putchar(*(str + i));
-putchar(10);
-}
+	while (str[index++])
+		len++;
 
-/**
-* _strlen - returns the length of a string
-* @s: string
-* Return: the length of the given string
-*/
+	if ((len % 2) == 0)
+		n = len / 2;
 
-int _strlen(char *s)
-{
-int len = 0;
+	else
+		n = (len + 1) / 2;
 
-while (*(s + len) != '\0')
-len++;
+	for (index = n; index < len; index++)
+		_putchar(str[index]);
 
-return (len);
+	_putchar('\n');
 }
